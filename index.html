@@ -13,55 +13,57 @@
 <body>
 
   <ul class="skip-links">
-    <li><a href="#main" aria-label="Skip to the main content">Skip to the main content</a></li>
-    <li><a href="#nav" aria-label="Skip to navigation">Skip to navigation</a></li>
+    <li><a href="#main" tabindex="0">Jump to main content</a></li>
+    <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
+    <li><a href="#tours" tabindex="0">Jump to tours content</a></li>
+    <li><a href="#ships" tabindex="0">Jump to ships content</a></li>
+    <li><a href="#tickets" tabindex="0">Jump to ticket content</a></li>
+    <li><a href="#contentinfo" tabindex="0">Jump to footer content</a></li>
   </ul>
 
-  <header role="banner">
-    <div class="masthead grid grid-middle gutter">
-      <h1 class="logo push-0 unit [ xs-1 s-1 m-1-2 l-1-2 ] pad-t-1-2 pad-b-1-2">
-      <i class="icon i-32 push-r-1-4"><img src="images/logo.svg" alt="" aria-details="logo"></i>
-      <span id="logo" class="logo-text giga icon-label text-left">Arrrgene’s Treasure Tours</span>
+  <header role="banner" class="masthead grid grid-middle gutter">
+    <h1 class="logo push-0 unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
+      <i class="icon i-32 push-r-1-4"><img src="images/logo.svg" alt="" aria-details="#treasure"></i>
+      <span class="logo-text giga icon-label text-left" id="#treasure">Arrrgene’s Treasure Tours</span>
     </h1>
-      <nav class="nav unit [ xs-1 s-1 m-1-2 l-1-2 ] pad-t-1-2 pad-b-1-2" role="navigation" id="nav" tabindex="0">
-        <ul class="list-group-inline mega push-0">
-          <li><a class="ib gutter-1-4" href="#" aria-label="Tours">Tours</a></li>
-          <li><a class="ib gutter-1-4" href="#" aria-label="Ships">Ships</a></li>
-          <li><a class="ib gutter-1-4" href="#" aria-label="Tickets">Tickets</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav role="navigation" id="nav" tabindex="0" class="nav unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
+      <ul class="list-group-inline mega push-0">
+        <li><a class="ib gutter-1-4" href="#tours" tabindex="0"><span>Tours</span></a></li>
+        <li><a class="ib gutter-1-4" href="#ships" tabindex="0"><span>Ships</span></a></li>
+        <li><a class="ib gutter-1-4" href="tickets.html" id="tickets" tabindex="0"><span>Tickets</span></a></li>
+      </ul>
+    </nav>
   </header>
 
   <main role="main" id="main" tabindex="0">
-    <section>
-      <div class="banner embed embed-16by9">
-        <img class="embed-item" src="images/banner.jpg" alt="" aria-details="ahoy">
+    <section id="tours">
+      <article class="banner embed embed-16by9">
+        <img class="embed-item" src="images/banner.jpg" alt="" aria-details="#banner">
         <div class="banner-content pin-c w-1 max-length gutter text-center">
-          <h2 id="ahoy" class="push-1-2">Ahoy, me Hearties!</h2>
-          <p>Batten down the hatches and sail me corsair to plentiful doubloons.</p>
+          <h2 class="push-1-2">Ahoy, me Hearties!</h2>
+          <p id="#banner">Batten down the hatches and sail me corsair to plentiful doubloons.</p>
           <a class="btn btn-ghost btn-banner bold" href="#">Book a tour</a>
         </div>
-      </div>
+      </article>
     </section>
-    <section>
-      <div class="island">
+
+    <section id="ships" tabindex="0">
+      <article class="island">
         <div class="card embed embed-golden">
           <div class="card-content pin-c w-1 max-length gutter text-center">
-            <i class="icon i-96 push-1-2"><img src="images/ship.svg" alt="" aria-details="heave"></i>
-            <h2 id="heave" class="push-1-2">Heave Ho!</h2>
-            <p>Weigh anchor and hoist the mizzen, ya old salt, aboard shipshape <i>Arrrgonaut</i>.</p>
+            <i class="icon i-96 push-1-2"><img src="images/ship.svg" alt="" aria-details="#ship"></i>
+            <h2 class="push-1-2">Heave Ho!</h2>
+            <p id="#ship">Weigh anchor and hoist the mizzen, ya old salt, aboard shipshape <i>Arrrgonaut</i>.</p>
             <a class="btn btn-light bold" href="#">See the specs</a>
           </div>
         </div>
-      </div>
+      </article>
     </section>
   </main>
 
-  <footer role="contentinfo">
-    <div class="footer micro text-center island-1-2">
-      <p class="push-0">© Arrrgene’s Treasure Tours</p>
-    </div>
+  <footer role="contentinfo" id="contentinfo" tabindex="0" class="footer micro text-center island-1-2">
+    <p class="push-0">© Arrrgene’s Treasure Tours</p>
   </footer>
+
 </body>
 </html>

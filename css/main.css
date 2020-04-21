@@ -22,6 +22,10 @@ html {
   text-align: center;
 }
 
+a:focus {
+  outline: 3px solid #bea59b;
+}
+
 .nav a {
   color: #fff;
   text-decoration: none;
@@ -31,12 +35,23 @@ html {
   border-bottom: .3rem solid #bea59b;
 }
 
-.nav a:focus {
-  outline: 3px solid #bea59b;
+.nav a:hover span,
+.nav a:focus span {
+  border-bottom-color: #bea59b;
+  outline: 4px solid #bea59b;
+  background-color: #fff;
+  color: #522806;
 }
 
-a:focus {
-  outline: 3px solid #bea59b;
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  background-color: #000;
+  color: #fff;
+}
+
+.skip-links a:focus {
+  top: 0;
 }
 
 .banner {
@@ -56,16 +71,10 @@ a:focus {
   color: #522806;
 }
 
-.btn-light:hover {
+.btn-light:hover,
+.btn-light:focus {
   background-color: #522806;
   border-color: #522806;
-}
-
-.btn-banner:focus,
-.btn-light:focus {
-  outline: 3px solid #f00;
-  color: #fff;
-  background-color: #00f;
 }
 
 .btn-banner {
@@ -73,8 +82,8 @@ a:focus {
   color: #fff;
 }
 
-.btn-banner:hover {
-  background-color: #bea59b;
+.btn-banner:hover,
+.btn-banner:focus {
   border-color: #fff;
   color: #522806;
 }
