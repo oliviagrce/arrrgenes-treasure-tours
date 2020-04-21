@@ -32,11 +32,11 @@ html {
 }
 
 .nav a:focus {
-  outline: 3px solid #f00;
+  outline: 3px solid #bea59b;
 }
 
 a:focus {
-  outline: 3px solid #f00;
+  outline: 3px solid #bea59b;
 }
 
 .banner {
