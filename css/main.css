@@ -31,9 +31,12 @@ html {
   border-bottom: .3rem solid #bea59b;
 }
 
-.nav a:hover span,
-.nav a:focus span {
-  border-bottom-color: #fff;
+.nav a:focus {
+  outline: 3px solid #f00;
+}
+
+a:focus {
+  outline: 3px solid #f00;
 }
 
 .banner {
@@ -53,10 +56,16 @@ html {
   color: #522806;
 }
 
-.btn-light:hover,
-.btn-light:focus {
+.btn-light:hover {
   background-color: #522806;
   border-color: #522806;
+}
+
+.btn-banner:focus,
+.btn-light:focus {
+  outline: 3px solid #f00;
+  color: #fff;
+  background-color: #00f;
 }
 
 .btn-banner {
@@ -64,8 +73,7 @@ html {
   color: #fff;
 }
 
-.btn-banner:hover,
-.btn-banner:focus {
+.btn-banner:hover {
   background-color: #bea59b;
   border-color: #fff;
   color: #522806;
