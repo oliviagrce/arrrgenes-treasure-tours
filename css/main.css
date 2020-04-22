@@ -1,7 +1,6 @@
 html {
   background-color: #fff;
   font-family: "Libre Baskerville", serif;
-  outline-color: #000;
 }
 
 .masthead {
@@ -21,11 +20,13 @@ html {
 
 .nav {
   text-align: center;
+  outline-color: #000;
 }
 
 .nav a {
   color: #fff;
   text-decoration: none;
+  outline-color: #000;
 }
 
 .nav a span {
