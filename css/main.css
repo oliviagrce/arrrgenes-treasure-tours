@@ -1,6 +1,7 @@
 html {
   background-color: #fff;
   font-family: "Libre Baskerville", serif;
+  outline-color: #000;
 }
 
 .masthead {
@@ -22,10 +23,6 @@ html {
   text-align: center;
 }
 
-a:focus {
-  outline: 3px solid #bea59b;
-}
-
 .nav a {
   color: #fff;
   text-decoration: none;
@@ -35,23 +32,12 @@ a:focus {
   border-bottom: .3rem solid #bea59b;
 }
 
-.nav a:hover span,
-.nav a:focus span {
-  border-bottom-color: #bea59b;
-  outline: 3px solid #bea59b;
-  background-color: #fff;
-  color: #522806;
+.nav a:focus {
+  outline: 3px solid #f00;
 }
 
-.skip-links a {
-  position: absolute;
-  top: -3em;
-  background-color: #000;
-  color: #fff;
-}
-
-.skip-links a:focus {
-  top: 0;
+a:focus {
+  outline: 3px solid #f00;
 }
 
 .banner {
@@ -71,10 +57,16 @@ a:focus {
   color: #522806;
 }
 
-.btn-light:hover,
-.btn-light:focus {
+.btn-light:hover {
   background-color: #522806;
   border-color: #522806;
+}
+
+.btn-banner:focus,
+.btn-light:focus {
+  outline: 3px solid #f00;
+  color: #fff;
+  background-color: #00f;
 }
 
 .btn-banner {
@@ -82,8 +74,8 @@ a:focus {
   color: #fff;
 }
 
-.btn-banner:hover,
-.btn-banner:focus {
+.btn-banner:hover {
+  background-color: #bea59b;
   border-color: #fff;
   color: #522806;
 }
