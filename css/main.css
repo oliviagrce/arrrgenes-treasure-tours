@@ -38,7 +38,7 @@ a:focus {
 .nav a:hover span,
 .nav a:focus span {
   border-bottom-color: #bea59b;
-  outline: 4px solid #bea59b;
+  outline: 3px solid #bea59b;
   background-color: #fff;
   color: #522806;
 }
